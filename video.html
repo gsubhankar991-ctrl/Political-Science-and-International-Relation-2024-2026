@@ -37,7 +37,7 @@
 
     <div class="main-vid-sc position-relative">
       <div class="final-vid-btn position-fixed bottom-0 end-0 text-center m-5">
-        <a href="final_vid.html" class="m-4 d-inline-block fs-1 rounded-circle p-2"><i
+        <a href="http://127.0.0.1:5501/final_vid.html" class="m-4 d-inline-block fs-1 rounded-circle p-2" title="Go to final video" aria-label="Go to final video"><i
             class="ti ti-player-skip-forward"></i></a>
         <p>Click to Unveil<br>The Final Surprise</p>
       </div>
@@ -84,6 +84,9 @@
             <div class="col-12 video-thumb" onclick="openModal(this)">
               <video autoplay loop muted src="videos/last.mp4"></video>
             </div>
+            <div class="col-12 video-thumb" onclick="openModal(this)">
+              <video autoplay loop muted src="videos/VN20260719_221752.mp4"></video>
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +95,7 @@
     <div class="vmodal-overlay" id="vmodal" onclick="handleOverlayClick(event)">
       <div class="vmodal-box">
         <button class="vmodal-close" onclick="closeModal()" aria-label="বন্ধ করুন">✕</button>
-        <video id="modal-video" controls autoplay playsinline></video>
+        <video id="modal-video" controls autoplay webkit-playsinline></video>
       </div>
     </div>
 
